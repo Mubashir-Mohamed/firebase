@@ -1,0 +1,17 @@
+<ActionBar title="MyApp" class="bar"> 
+        <GridLayout>    
+            <button text="Login" row="0" col="2" horizontalAlignment="right" class="btnb" (tap)="login()"></button>
+        </GridLayout>      
+    </ActionBar>
+
+<StackLayout>
+     <label text="FirstName"></label>
+     <textfield [(ngModel)]="input.firstname"></textfield>
+     <label text="LastName"></label>
+     <textfield [(ngModel)]="input.lastname"></textfield>
+     <label text="Enter Email"></label>
+     <textfield [(ngModel)]="input.email"></textfield>
+     <label text="Enter Password"></label>
+     <textfield [(ngModel)]="input.password"></textfield>
+    <button text="signup" (tap)="signup()"></button>
+</StackLayout>

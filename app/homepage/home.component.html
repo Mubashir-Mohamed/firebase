@@ -1,0 +1,11 @@
+<ActionBar title="MyApp" class="bar"> 
+    <GridLayout>    
+        <button text="LogOut" row="0" col="2" horizontalAlignment="right" class="btnb" (tap)="logout()"></button>
+    </GridLayout>      
+</ActionBar>
+<stacklayout>
+<label text="Enter the item"></label>
+<textfield [(ngModel)]="item"></textfield>
+<button text="Add" (tap)="add()"></button>
+<listview></listview>
+</stacklayout>
